@@ -280,7 +280,7 @@ end $$;
 -- Las funciones solo las puede ejecutar un dispositivo con sesión
 revoke execute on all functions in schema public from anon, public;
 -- "Ping" sin datos para la tarea automática que evita la pausa por inactividad
-create or replace function public.ping() returns boolean language sql stable as $$ select true $$;
+create or replace function public.ping() returns boolean language sql stable set search_path = '' as $$ select true $$;
 grant execute on function public.ping() to anon, authenticated;
 
 grant execute on function public.is_member(), public.is_parent() to authenticated;

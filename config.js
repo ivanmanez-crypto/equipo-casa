@@ -6,7 +6,7 @@
 // cuenta activada no permite leer ni escribir nada (ver supabase/schema.sql).
 // NUNCA pongas aquí la clave "service_role".
 window.APP_CONFIG = {
-  SUPABASE_URL: "",
-  SUPABASE_ANON_KEY: "",
+  SUPABASE_URL: "https://ylmandpunmrwfrnabeeg.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_re9AD30Mw7KD84F8UqOVww_yBxxPtka",
   TIMEZONE: "Europe/Madrid"
 };
